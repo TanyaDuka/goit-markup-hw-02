@@ -15,6 +15,19 @@ rgba(255, 255, 255, 0,6)-цвет адресса в футере*/
   --background-color: #e5e5e5;
 }
 
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
 body {
   background-color: var(--background-color);
   color: var(--title-text-color);
@@ -26,14 +39,6 @@ body {
   letter-spacing: 0.03em;
   font-size: 14px;
   line-height: 1.71;
-}
-
-header {
-  background-color: #ffffff;
-}
-
-footer {
-  background-color: #2f303a;
 }
 
 .title {
@@ -55,6 +60,10 @@ footer {
 
   color: var(--primary-text-color);
 }
+/* -----------------------------------------Header---------------------------------------------------------------- */
+header {
+  background-color: #ffffff;
+}
 
 /* Logo */
 
@@ -66,17 +75,13 @@ footer {
   color: #000000;
 }
 
-.logo.part {
+.logo-part {
   color: var(--accent-color);
-}
-
-.logo.footer {
-  color: var(--primary-white-color);
 }
 
 /* Site nav */
 
-.site-nav.link {
+.nav-link {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -85,14 +90,14 @@ footer {
   color: var(--primary-text-color);
 }
 
-.site-nav.link:hover,
-.site-nav.link:focus,
+.nav-link:hover,
+.nav-link:focus,
 .contact:hover,
 .contact:focus {
   color: var(--accent-color);
 }
 
-.site-nav.link.current {
+.nav-link.current {
   color: var(--accent-color);
 }
 
@@ -105,7 +110,40 @@ footer {
   letter-spacing: 0.02em;
 }
 
-/*Studio*/
+/* -------------------------------------Footer------------------------------------------------------------------- */
+
+footer {
+  background-color: #2f303a;
+}
+
+.logo-footer {
+  color: var(--primary-white-color);
+}
+
+address {
+  font-style: normal;
+}
+
+.footer-contact {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 14px;
+  line-height: 1.71;
+
+  letter-spacing: 0.03em;
+}
+
+.footer-contact:hover,
+.footer-contact:focus {
+  color: var(--accent-color);
+}
+
+.address-map {
+  color: var(--primary-white-color);
+}
+
+/*______________________________________________Studio__________________________________________________________*/
+/* ---------------------------------------------Hero----------------------------------------------------------- */
+
 .hero-title {
   font-weight: 900;
   font-size: 44px;
@@ -134,41 +172,20 @@ footer {
 
   cursor: pointer;
 }
-
-.subtitle.advantage {
+/* ----------------------------------------Advantage--------------------------------------------------------------- */
+.advantage-subtitle {
   text-transform: uppercase;
   font-size: 14px;
   font-weight: 700;
 }
-
-.section.ourteam {
+/* ----------------------------------------Ourteam----------------------------------------------------------------- */
+.ourteam-section {
   background-color: #f5f4fa;
 }
 
-.ourteam.text {
+.ourteam-text {
   font-size: 16px;
   line-height: 1.18;
-}
-
-address {
-  font-style: normal;
-}
-
-.footer.contact {
-  color: rgba(255, 255, 255, 0.6);
-  font-size: 14px;
-  line-height: 1.71;
-
-  letter-spacing: 0.03em;
-}
-
-.footer.contact:hover,
-.footer.contact:focus {
-  color: var(--accent-color);
-}
-
-.address-map {
-  color: var(--primary-white-color);
 }
 
 /*Portfolio*/
